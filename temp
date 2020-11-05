@@ -1,0 +1,8 @@
+https://cpcpay.cpc.com.tw/CPCGateway/CardMgrSrv/AutoBindReg
+
+header: Content-Type application/x-www-form-urlencoded
+
+body:
+raw text
+
+StatusCode=OB009&StatusDesc=沒有可以綁定的信用卡&sessionId=202010192141005241&EncryptData= RTAyMDQ5NUVFRUVFNTNCOTFFNkM5QTlFNzM4NEJGMjIyOTlFODI2RDhDRjU5Qjg3RjY3NzBERjM4QkIwRUYyRUM1RTNGM0I2OTM4ODlGRjkxRTY5NDAwMTlCNzY0NkM2OTAzQjczOTA3RDQ4Qzc4MDgxQjhCODA4NjUwNjE5QjJDMUVDREQ5MTcwQkFGNDkwMDUzNTNBN0E2MzhBREEyQg==
