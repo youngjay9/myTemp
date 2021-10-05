@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "4863e539-2a90-450d-b029-6cfbb91cad10",
+		"name": "TWID",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "BusinessNo",
+							"value": "83794245",
+							"type": "text"
+						},
+						{
+							"key": "ApiVersion",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "HashKeyNo",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "VerifyNo",
+							"value": "RICB_20211005132345",
+							"type": "text"
+						},
+						{
+							"key": "InputParams",
+							"value": "{'MemberNo': 'P185207579','Action': 'SIGN','Plaintext': 'P185207579','CAType': '9','MIDInputParams':{'Platform': '1'}}",
+							"type": "text"
+						},
+						{
+							"key": "IdentifyNo",
+							"value": "b0ed96c349bb233e6062401dca9f0ce27997295d796e0a7edb1c71d3c4d58911",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://pmdemo.twca.com.tw/IDPortal/Login",
+					"protocol": "https",
+					"host": [
+						"pmdemo",
+						"twca",
+						"com",
+						"tw"
+					],
+					"path": [
+						"IDPortal",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QueryVerifyResult",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "BusinessNo",
+							"value": "83794245",
+							"type": "text"
+						},
+						{
+							"key": "ApiVersion",
+							"value": "1.0",
+							"type": "text"
+						},
+						{
+							"key": "HashKeyNo",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "VerifyNo",
+							"value": "RICB_20211005104945",
+							"description": "需帶上一步驟 Login API 的 VerifyNo",
+							"type": "text"
+						},
+						{
+							"key": "MemberNo",
+							"value": "P185207579",
+							"type": "text"
+						},
+						{
+							"key": "Token",
+							"value": "93e9bf038e4144b59bf868b6eeb2626409478f7e",
+							"type": "text"
+						},
+						{
+							"key": "IdentifyNo",
+							"value": "ca66270500129720a5e809a4770c1ae0fd3985dd7d3a99ccab142b240fa93a2b",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://pmdemo.twca.com.tw/IDPortal/QueryVerifyResult",
+					"protocol": "https",
+					"host": [
+						"pmdemo",
+						"twca",
+						"com",
+						"tw"
+					],
+					"path": [
+						"IDPortal",
+						"QueryVerifyResult"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MIDClause",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pmdemo.twca.com.tw/IDPortal/MIDClause",
+					"protocol": "https",
+					"host": [
+						"pmdemo",
+						"twca",
+						"com",
+						"tw"
+					],
+					"path": [
+						"IDPortal",
+						"MIDClause"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cgnot0007/010_sit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"sessionPk\": \"9e9718c7-0afb-49cc-bb60-cf94c6a45c4a\",\r\n\t\"txnPk\": \"3d7daa2d-1484-4d63-9995-de4debd96d29\",\r\n\t\"trackingPk\": \"83f5700e-c2a3-4142-88b1-f1af17df975b\",\r\n\t\"pk\": \"9e9718c7-0afb-49cc-bb60-cf94c6a45c4a\",\r\n\t\"model\": \"Chrome\",\r\n\t\"platform\": \"browser\",\r\n\t\"version\": \"93.0.4577.82\",\r\n\t\"runtime\": \"browser\",\r\n\t\"runtimeVer\": 0,\r\n\t\"network\": \"unknown\",\r\n\t\"fromSysPk\": \"IB\",\r\n\t\"clientNo\": \"1633430113033\",\r\n\t\"clientTime\": 1633430241341,\r\n\t\"token\": \"1633430113100\",\r\n\t\"locale\": \"zh_TW\",\r\n\t\"rqData\": {\r\n\t\t\"mobileNo\": \"0981253679\",\r\n\t\t\"platForm\": \"1\",\r\n\t\t\"operator\": \"223\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8763/channel-cgn/CGNOT0007/010",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8763",
+					"path": [
+						"channel-cgn",
+						"CGNOT0007",
+						"010"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
