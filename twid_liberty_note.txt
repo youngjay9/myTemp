@@ -1,0 +1,94 @@
+
+httpPort="10033"
+httpsPort="19033"
+
+1.	登入B2C AP1
+
+2.	切換帳號為wasadmin
+
+3.	複製既有的 liberty服務：
+
+	cp -r /usr/IBM/WebSphere/wlp/usr/servers/business-common /usr/IBM/WebSphere/wlp/usr/servers/twid
+	
+	
+4.	修改 server.xml
+	
+		參考 server.xml 的設定內容
+		
+		dataSource 的部份不能用 include 的方式讀進來，不然 jndi 的設定程式會讀不到
+		
+			  
+5.	修改 server.env的SERVER_PORT: 10033
+
+		參考 server.env 的設定內容
+		
+
+6.  修改 jvm.options
+
+	因為 Liberty server 連線到 MS SQL sever 需透過 TLS，
+    
+	所以此設定檔需加入：-Dcom.ibm.jsse2.overrideDefaultTLS=true
+
+    另外需指定 jvm 大小：
+						-Xmx8192m
+						
+						-Xms512m
+
+7. IdPortal 程式包的 web.xml 需加入以下 jndi 的設定並參考 com.twid.JndiServlet 的設定
+
+	<!-- SQL SERVER JNDI -->
+    <resource-ref>
+          <description>SQL SERVER DB</description >
+          <res-ref-name>jdbc/IDPDB</res-ref-name>
+          <res-type>javax.sql.DataSource</res-type >
+          <res-auth>Container</res-auth >
+          <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
+	
+	
+	
+	
+8. 	IdPortal 程式包的 log4j 的 log 路徑及 rollingPolicy 請參考以下設定
+
+	
+		<springProperty scope="context" name="logDir" source="ibmb.log.dir" defaultValue="/data/app/ebank/logs/services" />
+	
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+				<fileNamePattern>${logDir}/${appName}-${appActive}.log.%d{yyyyMMdd}</fileNamePattern>
+				<maxHistory>${maxHistory}</maxHistory>
+		</rollingPolicy>
+
+
+9. 憑證相關設定檔可放在目錄：twid/resources/security/
+
+
+
+10.	佈署 war
+
+	 將 twid.war 放到 /usr/IBM/WebSphere/wlp/usr/servers/twid/dropins
+	 
+	 chmod 777 twid.war
+ 
+
+ 
+11. 啟動服務指令 
+
+	windows 啟動指令
+	C:\IBM\WebSphere\wlp\bin\tools\win\prunsrv.exe //RS//account-link-staff 
+
+	Linux 起動指令
+	/usr/IBM/WebSphere/wlp/bin/server start twid --clean
+ 
+ 
+12. 暫停服務指令
+ 
+	 /data/app/ebank/bin/wlp/stopWlp.sh twid
+	 
+	 Linux stop指令
+	 /usr/IBM/WebSphere/wlp/bin/server stop twid
+ 
+ 
+ 
+ curl --location --request GET 'http://127.0.0.1:10033/twid/jndiTest'
+ 
+ curl --location --request GET 'http://127.0.0.1:10033/twid/jdbcTest'
