@@ -1,0 +1,39 @@
+2021-11-05 10:18:56.267 DEBUG [Default Executor-thread-107893][APIAccessLogFilter][doFilter] RequestURI=/IDPortal/QueryVerifyResult
+2021-11-05 10:18:56.267 INFO  [Default Executor-thread-107893][QueryVerifyResult][processRequest] QueryVerifyResult START
+2021-11-05 10:18:56.268 INFO  [Default Executor-thread-107893][QueryVerifyResult][processRequest] isPKCS7Token=false
+2021-11-05 10:18:56.268 DEBUG [Default Executor-thread-107893][Code][initResultCodeAndReturnCodeNewType] code=0000
+2021-11-05 10:18:56.268 DEBUG [Default Executor-thread-107893][Code][initResultCodeAndReturnCodeNewType] message=成功
+2021-11-05 10:18:56.268 DEBUG [Default Executor-thread-107893][Code][initResultCodeAndReturnCodeNewType] new type code=0
+2021-11-05 10:18:56.269 DEBUG [Default Executor-thread-107893][CommonUtil][getParameter] request.getParameter(BusinessNo)=83794245
+2021-11-05 10:18:56.269 DEBUG [Default Executor-thread-107893][CommonUtil][getParameter] request.getParameter(HashKeyNo)=1
+2021-11-05 10:18:56.269 DEBUG [Default Executor-thread-107893][CommonUtil][getParameter] request.getParameter(IdentifyNo)=098b67ba28dc7e3b5c70f8133021fd81ec6f845c28375206277bcc0de8a80901
+2021-11-05 10:18:56.269 DEBUG [Default Executor-thread-107893][CommonUtil][getParameter] request.getParameter(PlatBusinessNo)=
+2021-11-05 10:18:56.270 DEBUG [Default Executor-thread-107893][CommonUtil][getParameter] request.getParameter(PlatHashKeyNo)=
+2021-11-05 10:18:56.270 DEBUG [Default Executor-thread-107893][CommonUtil][getParameter] request.getParameter(PlatIdentifyNo)=
+2021-11-05 10:18:56.270 INFO  [Default Executor-thread-107893][IdentifyNoManagerFactory][getIdentifyNoManager] The real identifyNoManager=OnsiteIdentifyNoManager
+2021-11-05 10:18:56.270 DEBUG [Default Executor-thread-107893][OrderedData][parseInput] BusinessNo=83794245
+2021-11-05 10:18:56.270 DEBUG [Default Executor-thread-107893][OrderedData][parseInput] ApiVersion=1.0
+2021-11-05 10:18:56.271 DEBUG [Default Executor-thread-107893][OrderedData][parseInput] HashKeyNo=1
+2021-11-05 10:18:56.271 DEBUG [Default Executor-thread-107893][OrderedData][parseInput] VerifyNo=RICB_20211105170646
+2021-11-05 10:18:56.271 DEBUG [Default Executor-thread-107893][OrderedData][parseInput] MemberNo=P185207579
+2021-11-05 10:18:56.271 DEBUG [Default Executor-thread-107893][OrderedData][parseInput] Token=df5894db1ccf4fe6b5c603ff765e8ed4fad29453
+2021-11-05 10:18:56.271 DEBUG [Default Executor-thread-107893][OrderedData][parseInput] IdentifyNo=098b67ba28dc7e3b5c70f8133021fd81ec6f845c28375206277bcc0de8a80901
+2021-11-05 10:18:56.272 DEBUG [Default Executor-thread-107893][OrderedData][parseInput] PlatBusinessNo=
+2021-11-05 10:18:56.272 DEBUG [Default Executor-thread-107893][OrderedData][parseInput] PlatHashKeyNo=
+2021-11-05 10:18:56.272 DEBUG [Default Executor-thread-107893][OrderedData][parseInput] PlatIdentifyNo=
+2021-11-05 10:18:56.272 ERROR [Default Executor-thread-107893][OnsiteIdentifyNoManager][checkInputPartIdentifyNo] CombinedString for identifyNo=837942451.01RICB_20211105170646P185207579df5894db1ccf4fe6b5c603ff765e8ed4fad29453showmethemoney
+2021-11-05 10:18:56.272 ERROR [Default Executor-thread-107893][OnsiteIdentifyNoManager][checkInputPartIdentifyNo] IdentifyNo 不一致。傳入的 IdentifyNo=098b67ba28dc7e3b5c70f8133021fd81ec6f845c28375206277bcc0de8a80901，系統算出的=016dddb15371549fb8b86f7b564e1e554026dac8ae8ea1ef9737b925bb96f6e0
+2021-11-05 10:18:56.273 ERROR [Default Executor-thread-107893][OnsiteIdentifyNoManager][checkInputIdentifyNo] IdentifyNo 比對失敗
+2021-11-05 10:18:56.273 DEBUG [Default Executor-thread-107893][Code][initResultCodeAndReturnCodeNewType] code=1003
+2021-11-05 10:18:56.273 DEBUG [Default Executor-thread-107893][Code][initResultCodeAndReturnCodeNewType] message=驗證碼錯誤
+2021-11-05 10:18:56.273 DEBUG [Default Executor-thread-107893][Code][initResultCodeAndReturnCodeNewType] new type code=2031003
+2021-11-05 10:18:56.273 ERROR [Default Executor-thread-107893][QueryVerifyResult][processRequest] IdentifyNo 比對失敗
+2021-11-05 10:18:56.273 DEBUG [Default Executor-thread-107893][Code][getFinalErrCodeByType] Login ErrorCodeType=0
+2021-11-05 10:18:56.274 DEBUG [Default Executor-thread-107893][Code][getFinalErrCodeByType] final err code=1003, err msg=驗證碼錯誤
+2021-11-05 10:18:56.274 INFO  [Default Executor-thread-107893][QueryVerifyResult][processRequest] QueryVerifyResult return code=1003
+2021-11-05 10:18:56.275 INFO  [Default Executor-thread-107893][QueryVerifyResult][processRequest] QueryVerifyResult return new type code=2031003
+2021-11-05 10:18:56.275 INFO  [Default Executor-thread-107893][QueryVerifyResult][processRequest] QueryVerifyResult return message=驗證碼錯誤
+2021-11-05 10:18:56.275 INFO  [Default Executor-thread-107893][QueryVerifyResult][processRequest] Token=df5894db1ccf4fe6b5c603ff765e8ed4fad29453
+2021-11-05 10:18:56.275 DEBUG [Default Executor-thread-107893][QueryVerifyResult][processRequest] QueryVerifyResult reponse={"BusinessNo":"83794245","ApiVersion":"1.0","HashKeyNo":"1","VerifyNo":"RICB_20211105170646","ResultCode":"F","ReturnCode":"1003","ReturnCodeDesc":"驗證碼錯誤","IdentifyNo":"f4b436213bfb11a592a4a4fb51e5b8326242e64a6c4f15ee2917bd2d69b1e2a5","OutputParams":"{\"Action\":\"\",\"SelectType\":\"\",\"VerifyTime\":\"\",\"Plaintext\":\"\"}"}
+2021-11-05 10:18:56.276 INFO  [Default Executor-thread-107893][QueryVerifyResult][processRequest] QueryVerifyResult END
+2021-11-05 10:18:56.289 DEBUG [Default Executor-thread-107893][APIAccessLogManager][lambda$writeAPIAccessLog$0] Write APIAccessLog for QueryVerifyResult successfully.
