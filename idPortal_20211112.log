@@ -1,0 +1,33 @@
+2021-11-12 15:13:08.741 DEBUG [Default Executor-thread-4797][APIAccessLogFilter][doFilter] RequestURI=/IDPortal/v1/auth.json
+2021-11-12 15:13:08.744 DEBUG [Default Executor-thread-4797][MidSDKProcess][processRequest] MidSDKProcess START
+2021-11-12 15:13:08.745 DEBUG [Default Executor-thread-4797][Code][initResultCodeAndReturnCodeNewType] code=0000
+2021-11-12 15:13:08.745 DEBUG [Default Executor-thread-4797][Code][initResultCodeAndReturnCodeNewType] message=成功
+2021-11-12 15:13:08.745 DEBUG [Default Executor-thread-4797][Code][initResultCodeAndReturnCodeNewType] new type code=0
+2021-11-12 15:13:08.745 DEBUG [Default Executor-thread-4797][MidSDKProcess][setTokenTimeout] tokenTimeoutParam=6000
+2021-11-12 15:13:08.746 DEBUG [Default Executor-thread-4797][MidSDKProcess][processRequest] MidSDKProcess 初始化成功
+2021-11-12 15:13:08.746 DEBUG [Default Executor-thread-4797][MidSDKProcess][processRequest] tokenTimeout=6000
+2021-11-12 15:13:08.746 DEBUG [Default Executor-thread-4797][MidSDKProcess][processRequest] MID_GATEWAY_URL=http://localhost:10034/idgw/mid
+2021-11-12 15:13:08.746 DEBUG [Default Executor-thread-4797][MidSDKProcess][processRequest] retell_period=60
+2021-11-12 15:13:08.747 DEBUG [Default Executor-thread-4797][OrderedData][parseInput] ver=1.0
+2021-11-12 15:13:08.748 DEBUG [Default Executor-thread-4797][OrderedData][parseInput] reqType=Authorize
+2021-11-12 15:13:08.748 DEBUG [Default Executor-thread-4797][OrderedData][parseInput] reqId=8379424501
+2021-11-12 15:13:08.748 DEBUG [Default Executor-thread-4797][OrderedData][parseInput] reqSeq=0116367007322920010000
+2021-11-12 15:13:08.748 DEBUG [Default Executor-thread-4797][OrderedData][parseInput] payload=udUcWHLK36uFyIJuI-VdVqbNrbm9UMWuWS2OkqBTA_oGdYYclRR3YalGojfKG0mhNhjwAK9NnHwscYkNTHKlfuGQ3QTsfaW99dBBDDKm8Y06157kyItwdobQfwNcgGnZN3MzEAWyLYMkHqQ-hdeZ_Al1lQACbnKFzRXfx9whyhOxHbRFDcJRSVG9yL4d5saRPr7o7uSNa-LGoKVaDodxBPmRmwHxtvwuIUxVZgkxkaPnFJqLr6pKK1xaVVHOm-9la6o_rBs6M2bi2trUvUnq_IXfyziKuoVbkuWUfHQOu-HfOl8mrSzVa1aDr4Gavm1lphaUf_qWXU7EjYgn7dfzA0Cdg_uE1pPNy0kOqYWYQH_7HaRWhZJQi-2jTGyoTTLjyPxSV_RHPStyt9ckXi-qSnlGpvuLtcdrEudqmkC5eZX4Am06B3VFFm8rdDZM5JPDMFFNjmhTAWadJ-Tez8EWXp4LHKi-II0PjjSwAIt23gLM-zFi8sri5pjc6yxacLt3GX8Si6dWk8og2Lptanp9PzTdxwEcZkKxmVcWxnXMET0VAI59rUaSYT4Wc7rq5hUfkQVnUGN1n3I19igrBCQ5yA
+2021-11-12 15:13:08.749 DEBUG [Default Executor-thread-4797][OrderedData][parseInput] mac=jnfZPVQJcarrqZ-OsAMUWqAdVh6hjC_3v_Y68dU6FD4
+2021-11-12 15:13:08.786 DEBUG [Default Executor-thread-4797][MobileIDService][getProperMIDServiceAction] reqType: Authorize
+2021-11-12 15:13:08.786 DEBUG [Default Executor-thread-4797][MIDServiceAction][initState] SelectCaType=9
+2021-11-12 15:13:08.795 DEBUG [Default Executor-thread-4797][JSONUtil][transformIntoXwwwFormUrlencoded] transformedResult=ver=1.0&businessNo=83794245&idType=9&tokenId=d2e4d8a353634f70a5fb06c62a9147eb2d4a8718&payload=udUcWHLK36uFyIJuI-VdVqbNrbm9UMWuWS2OkqBTA_oGdYYclRR3YalGojfKG0mhNhjwAK9NnHwscYkNTHKlfuGQ3QTsfaW99dBBDDKm8Y06157kyItwdobQfwNcgGnZN3MzEAWyLYMkHqQ-hdeZ_Al1lQACbnKFzRXfx9whyhOxHbRFDcJRSVG9yL4d5saRPr7o7uSNa-LGoKVaDodxBPmRmwHxtvwuIUxVZgkxkaPnFJqLr6pKK1xaVVHOm-9la6o_rBs6M2bi2trUvUnq_IXfyziKuoVbkuWUfHQOu-HfOl8mrSzVa1aDr4Gavm1lphaUf_qWXU7EjYgn7dfzA0Cdg_uE1pPNy0kOqYWYQH_7HaRWhZJQi-2jTGyoTTLjyPxSV_RHPStyt9ckXi-qSnlGpvuLtcdrEudqmkC5eZX4Am06B3VFFm8rdDZM5JPDMFFNjmhTAWadJ-Tez8EWXp4LHKi-II0PjjSwAIt23gLM-zFi8sri5pjc6yxacLt3GX8Si6dWk8og2Lptanp9PzTdxwEcZkKxmVcWxnXMET0VAI59rUaSYT4Wc7rq5hUfkQVnUGN1n3I19igrBCQ5yA&platBusinessNo=&reqType=Authorize&verifyNo=RICB20211112150446&userAgent=&reqSeq=0116367007322920010000&mac=jnfZPVQJcarrqZ-OsAMUWqAdVh6hjC_3v_Y68dU6FD4&reqId=8379424501
+2021-11-12 15:13:08.798 DEBUG [Default Executor-thread-4797][JSONUtil][getJSONObjUsingHttpPost] Request method: POST
+2021-11-12 15:13:08.798 DEBUG [Default Executor-thread-4797][JSONUtil][getJSONObjUsingHttpPost] Request property Content-Type: application/x-www-form-urlencoded; charset=utf-8
+2021-11-12 15:13:09.871 DEBUG [Default Executor-thread-4797][JSONUtil][getJSONObjUsingHttpPost] Server response={"code":"4100","fullcode":"3644100","message":"Certificate chaining error","srvCode":"364"}
+2021-11-12 15:13:09.872 DEBUG [Default Executor-thread-4797][Code][initResultCodeAndReturnCodeNewType] code=5905
+2021-11-12 15:13:09.872 DEBUG [Default Executor-thread-4797][Code][initResultCodeAndReturnCodeNewType] message=MID 驗證失敗,(4100)Certificate chaining error
+2021-11-12 15:13:09.872 DEBUG [Default Executor-thread-4797][Code][initResultCodeAndReturnCodeNewType] new type code=2035905
+2021-11-12 15:13:09.872 ERROR [Default Executor-thread-4797][MidSDKProcess][processRequest] (4100)Certificate chaining error
+2021-11-12 15:13:09.885 DEBUG [Default Executor-thread-4797][ErrMsgDescTransformer][getMappedErrCodeDescription] serviceErrCode=4100
+2021-11-12 15:13:09.886 DEBUG [Default Executor-thread-4797][ErrMsgDescTransformer][getMappedErrCodeDescription] orginalErrorCodeDescription=Certificate chaining error
+2021-11-12 15:13:09.886 DEBUG [Default Executor-thread-4797][ErrMsgDescTransformer][getMappedErrCodeDescription] errorCodeDescription=系統維護中，請稍後再試。
+2021-11-12 15:13:09.887 DEBUG [Default Executor-thread-4797][MidSDKProcess][processRequest] finalResponse={"fullcode":"3644100","srvCode":"364","code":"4100","message":"系統維護中，請稍後再試。(5905-4100)"}
+2021-11-12 15:13:09.890 DEBUG [Default Executor-thread-4797][APIAccessLogManager][lambda$writeAPIAccessLog$0] Write APIAccessLog for MID_SDK_MIDGateway successfully.
+2021-11-12 15:13:09.892 DEBUG [Default Executor-thread-4797][APIAccessLogManager][lambda$writeAPIAccessLog$0] Write APIAccessLog for MID_SDK_AAA successfully.
+2021-11-12 15:13:09.895 DEBUG [Default Executor-thread-4797][APIAccessLogManager][lambda$writeAPIAccessLog$0] Write APIAccessLog for MID_SDK_MidSDKProcess successfully.
