@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "41d33f68-5409-4226-bcb3-83ef37506278",
+		"name": "TPES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://10.209.101.45/tpesapi/restApi/createForm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"EMP_NO\": \"666666\",\r\n \"REGION\": \"07\",\r\n \"FM_NO\": \"10164184\",\r\n \"FMBH_NO\": \"\",\r\n \"FORM_TYPE\": \"APR5013\",\r\n \"APIT_COD\": \"I0510\",\r\n \"APPLY_TYPE\": \"電話申請\",\r\n \"UNIFORM_NUM\": \"\",\r\n \"IS_AGENT\": \"N\",\r\n \"CUST_NAME\": \"測試人\",\r\n \"CONTRACT_TYPE\": \"P\",\r\n \"ELECTRIC_NUM\": \"10760355301\",\r\n \"COMPUTE_DATE\": \"05\",\r\n \"ACCEPT_DEPT\": \"105\",\r\n \"ACCEPT_DEPT_NAME\": \"開發一部\",\r\n \"ACCEPT_USER\": \"666666\",\r\n \"ACCEPT_USER_NAME\": \"王小明\",\r\n \"ACCEPT_DATE\": \"2021-11-30 19:00:00\",\r\n \"IS_UPDATE\": \"N\",\r\n \"IS_ADD_ATTACHMENT\": \"N\",\r\n \"IS_AFFIDAVIT\": \"N\",\r\n \"UPLOAD_NO\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.209.101.45/tpesapi/restApi/createForm",
+					"protocol": "http",
+					"host": [
+						"10",
+						"209",
+						"101",
+						"45"
+					],
+					"path": [
+						"tpesapi",
+						"restApi",
+						"createForm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://10.209.5.125/66/api/TRE0000/TPES_01/?DITR_NO=01&FM_NO=10164184&FMBH_NO&APIT_COD=I0510",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://10.209.5.125/66/api/TRE0000/TPES_01/?DITR_NO=01&FM_NO=10164184&FMBH_NO&APIT_COD=I0510",
+					"protocol": "http",
+					"host": [
+						"10",
+						"209",
+						"5",
+						"125"
+					],
+					"path": [
+						"66",
+						"api",
+						"TRE0000",
+						"TPES_01",
+						""
+					],
+					"query": [
+						{
+							"key": "DITR_NO",
+							"value": "01"
+						},
+						{
+							"key": "FM_NO",
+							"value": "10164184"
+						},
+						{
+							"key": "FMBH_NO",
+							"value": null
+						},
+						{
+							"key": "APIT_COD",
+							"value": "I0510"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://10.209.5.125/66/api/TRE0000/TPES_01/?DITR_NO=01&FM_NO=10164184&FMBH_NO&APIT_COD=I0510 Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://10.209.5.125/66/api/TRE0000/TPES_01/?DITR_NO=01&FM_NO=10164184&FMBH_NO&APIT_COD=I0510",
+					"protocol": "http",
+					"host": [
+						"10",
+						"209",
+						"5",
+						"125"
+					],
+					"path": [
+						"66",
+						"api",
+						"TRE0000",
+						"TPES_01",
+						""
+					],
+					"query": [
+						{
+							"key": "DITR_NO",
+							"value": "01"
+						},
+						{
+							"key": "FM_NO",
+							"value": "10164184"
+						},
+						{
+							"key": "FMBH_NO",
+							"value": null
+						},
+						{
+							"key": "APIT_COD",
+							"value": "I0510"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://10.209.101.46:8080/tpesapi/restApi/uploadFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"SYSTEM\":\"APP\",\r\n    \"REGION\":\"01\",\r\n    \"FILE_LIST\": [{\r\n        \"CATEGORY\": \"A123456789\",\r\n        \"FILE_NAME\": \"\",\r\n        \"ORIGINCAL_FILE_NAME\": \"test.txt\",\r\n        \"FILE_EXT\": \"txt\",\r\n        \"FILE\": \"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\"\r\n        }\r\n    ],\r\n    \"CATEGORY\": \"A123456789\",\r\n    \"FILE_NAME\": \"\",\r\n    \"ORIGINCAL_FILE_NAME\": \"test.txt\",\r\n    \"FILE_EXT\": \"txt\",\r\n    \"FILE\": \"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.209.101.46:8080/tpesapi/restApi/externalUpload",
+					"protocol": "http",
+					"host": [
+						"10",
+						"209",
+						"101",
+						"46"
+					],
+					"port": "8080",
+					"path": [
+						"tpesapi",
+						"restApi",
+						"externalUpload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://10.209.101.45/tpesapi/restApi/closeForm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"REGION\": \"07\",\r\n    \"FM_NO\": \"10163981\",\r\n    \"FMBH_NO\": \"test\",\r\n    \"FORM_TYPE\": \"APR0530\",\r\n    \"APIT_COD\": \"E304A\",\r\n    \"STATUS\": \"close\",\r\n    \"ARCHIVE_NUM\": \"12345678\",\r\n    \"ELECT_METER_VALUE\": \"\",\r\n    \"SIGN_TRAJECTORY\": \"test\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.209.101.45/tpesapi/restApi/closeForm",
+					"protocol": "http",
+					"host": [
+						"10",
+						"209",
+						"101",
+						"45"
+					],
+					"path": [
+						"tpesapi",
+						"restApi",
+						"closeForm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FET closeForm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"REGION\": \"07\",\r\n    \"FM_NO\": \"10163981\",\r\n    \"FMBH_NO\": \"test\",\r\n    \"FORM_TYPE\": \"APR0530\",\r\n    \"APIT_COD\": \"E304A\",\r\n    \"STATUS\": \"close\",\r\n    \"ARCHIVE_NUM\": \"12345678\",\r\n    \"ELECT_METER_VALUE\": \"\",\r\n    \"SIGN_TRAJECTORY\": \"test\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.209.101.45/tpesapi/restApi/closeForm",
+					"protocol": "http",
+					"host": [
+						"10",
+						"209",
+						"101",
+						"45"
+					],
+					"path": [
+						"tpesapi",
+						"restApi",
+						"closeForm"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
